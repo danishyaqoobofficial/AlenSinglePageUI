@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/f.js">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Alen</title>
+    <style>
+
+
+
+.scroolbar::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  /* Track */
+  .scroolbar::-webkit-scrollbar-track {
+    /* background: #f1f1f1; */
+  }
+  
+  /* Handle */
+  .scroolbar::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 50px;
+  }
+  
+  /* Handle on hover */
+  .scroolbar::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+
+
+
+  .block_item{
+    display: none;
+  }
+
+  .block_item_main:hover ~ .block_item{
+    display: block;
+  }
+
+  .block_item2{
+    display: none;
+  }
+
+  .block_item_main2:hover ~ .block_item2{
+    display: block;
+  }
+
+
+    </style>
+</head>
+<body>
+    <section class="max-w-[1560px] mx-auto py-[30px] flex gap-[22px] items-start px-[8px] sm:px-[12px] md:flex-row flex-col ">
+
+        <!-- First Line start -->
+
+        <div class="bg-[#282828] rounded-[24px] w-full md:w-[340px] px-[12px] sm:px-[16px] py-[14px] sm:py-[22px]  ">
+            <h2 class="text-[20px] sm:text-[22px] font-[500] text-[#fff] ">Purchase Calculator</h2>
+
+
+
+            <div class=" xl:overflow-auto xl:max-h-[660px] sm:px-[4px] scroolbar ">
+                <p class="text-[13px] mt-[22px] text-[#fff] font-[600] ">Home Value</p>
+                <div class="h-[50px] mt-[12px] ">
+                    <input class= "w-full py-[14px] px-[12px] text-[13px] text-[#fff] h-full bg-[#3e3e3e] font-[500] rounded-[10px] outline-0 " type="text">
+                </div>
+
+                <!--  -->
+
+
+                <p class="text-[13px] mt-[14px] text-[#fff] font-[600] ">Down Payment</p>
+                <div class="bg-[#3e3e3e] flex items-center mt-[12px] rounded-[10px] overflow-hidden h-[50px] ">
+                    <input class= " flex-1 py-[14px] px-[12px] text-[13px] text-[#fff] bg-[#3e3e3e] font-[500] h-full rounded-[10px] outline-0 " type="text">
+                    <div class="p-[3px] h-full">
+                        <div class="bg-[#000] h-full flex items-center bg-[#787878] rounded-[8px] overflow-hidden " >
+                            <div class="hover:bg-[#bcbcbc] group h-full flex items-center justify-center px-[17px] rounded-[6px] ">
+                            <i class="fa-solid fa-dollar-sign text-[13px] group-hover:text-[#000] text-[#fff] "></i>
+                            </div>
+                            <div class="hover:bg-[#bcbcbc] h-full flex group items-center justify-center px-[17px] rounded-[6px] ">
+                            <p class="text-[#fff] text-[13px] font-[600] cursor-default select-none group-hover:text-[#000] " >%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  -->
+
+                <p class="text-[13px] mt-[22px] text-[#fff] font-[600] ">Mortgage Amount</p>
+                <div class="h-[50px] mt-[12px] ">
+                    <input class= "w-full py-[14px] px-[12px] text-[13px] text-[#fff] h-full bg-[#3e3e3e] font-[500] rounded-[10px] outline-0 " type="text">
+                </div>
+
+                <!--  -->
+
+                <p class="text-[13px] mt-[22px] text-[#fff] font-[600] ">Loan Terms</p>
+                <div class="bg-[#3e3e3e] flex items-center mt-[12px] rounded-[10px] overflow-hidden h-[50px] ">
+                    <input class= "flex-1 py-[14px] px-[12px] text-[13px] text-[#fff] bg-[#3e3e3e] font-[500] h-full rounded-[10px] outline-0 " type="text">
+                    <span class="p-[3px] h-full " >
+                        <div class="bg-[#000] h-full flex-1 flex items-center bg-[#787878] rounded-[8px] overflow-hidden " >
+                            <div class="flex-1 hover:bg-[#bcbcbc] group h-full flex items-center justify-center px-[17px] rounded-[6px] ">
+                                <p class="text-[#fff] text-[13px] font-[600] cursor-default select-none group-hover:text-[#000] " >Year</p>
+                            </div>
+                            <div class="flex-1 hover:bg-[#bcbcbc] h-full flex group items-center justify-center px-[17px] rounded-[6px] ">
+                                <p class="text-[#fff] text-[13px] font-[600] cursor-default select-none group-hover:text-[#000] " >Month</p>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+
+                <p class="text-[13px] mt-[22px] text-[#fff] font-[600] ">Loan Terms</p>
+                <div class="bg-[#3e3e3e] flex items-center mt-[12px] rounded-[10px] overflow-hidden h-[50px] ">
+                    <input class= "flex-1 py-[14px] px-[12px] text-[13px] text-[#fff] bg-[#3e3e3e] font-[500] h-full rounded-[10px] outline-0 " type="text">
+                    <span class="p-[3px] h-full " >
+                        <div class="bg-[#000] h-full flex-1 flex items-center bg-[#787878] rounded-[8px] overflow-hidden " >
+                            <div class="flex-1 hover:bg-[#bcbcbc] group h-full flex items-center justify-center px-[17px] rounded-[6px] ">
+                                <p class="text-[#fff] text-[13px] font-[600] cursor-default select-none group-hover:text-[#000] " >Year</p>
+                            </div>
+                            <div class="flex-1 hover:bg-[#bcbcbc] h-full flex group items-center justify-center px-[17px] rounded-[6px] ">
+                                <p class="text-[#fff] text-[13px] font-[600] cursor-default select-none group-hover:text-[#000] " >Month</p>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+
+                <p class="text-[13px] mt-[22px] text-[#fff] font-[600] ">Loan Terms</p>
+                <div class="bg-[#3e3e3e] flex items-center mt-[12px] rounded-[10px] overflow-hidden h-[50px] ">
+                    <input class= "flex-1 py-[14px] px-[12px] text-[13px] text-[#fff] bg-[#3e3e3e] font-[500] h-full rounded-[10px] outline-0 " type="text">
+                    <span class="p-[3px] h-full " >
+                        <div class="bg-[#000] h-full flex-1 flex items-center bg-[#787878] rounded-[8px] overflow-hidden " >
+                            <div class="flex-1 hover:bg-[#bcbcbc] group h-full flex items-center justify-center px-[17px] rounded-[6px] ">
+                                <p class="text-[#fff] text-[13px] font-[600] cursor-default select-none group-hover:text-[#000] " >Year</p>
+                            </div>
+                            <div class="flex-1 hover:bg-[#bcbcbc] h-full flex group items-center justify-center px-[17px] rounded-[6px] ">
+                                <p class="text-[#fff] text-[13px] font-[600] cursor-default select-none group-hover:text-[#000] " >Month</p>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+
+                <p class="text-[13px] mt-[22px] text-[#fff] font-[600] ">Loan Terms</p>
+                <div class="bg-[#3e3e3e] flex items-center mt-[12px] rounded-[10px] overflow-hidden h-[50px] ">
+                    <input class= "flex-1 py-[14px] px-[12px] text-[13px] text-[#fff] bg-[#3e3e3e] font-[500] h-full rounded-[10px] outline-0 " type="text">
+                    <span class="p-[3px] h-full " >
+                        <div class="bg-[#000] h-full flex-1 flex items-center bg-[#787878] rounded-[8px] overflow-hidden " >
+                            <div class="flex-1 hover:bg-[#bcbcbc] group h-full flex items-center justify-center px-[17px] rounded-[6px] ">
+                                <p class="text-[#fff] text-[13px] font-[600] cursor-default select-none group-hover:text-[#000] " >Year</p>
+                            </div>
+                            <div class="flex-1 hover:bg-[#bcbcbc] h-full flex group items-center justify-center px-[17px] rounded-[6px] ">
+                                <p class="text-[#fff] text-[13px] font-[600] cursor-default select-none group-hover:text-[#000] " >Month</p>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+
+                <p class="text-[13px] mt-[22px] text-[#fff] font-[600] ">Loan Terms</p>
+                <div class="bg-[#3e3e3e] flex items-center mt-[12px] rounded-[10px] overflow-hidden h-[50px] ">
+                    <input class= "flex-1 py-[14px] px-[12px] text-[13px] text-[#fff] bg-[#3e3e3e] font-[500] h-full rounded-[10px] outline-0 " type="text">
+                    <span class="p-[3px] h-full " >
+                        <div class="bg-[#000] h-full flex-1 flex items-center bg-[#787878] rounded-[8px] overflow-hidden " >
+                            <div class="flex-1 hover:bg-[#bcbcbc] group h-full flex items-center justify-center px-[17px] rounded-[6px] ">
+                                <p class="text-[#fff] text-[13px] font-[600] cursor-default select-none group-hover:text-[#000] " >Year</p>
+                            </div>
+                            <div class="flex-1 hover:bg-[#bcbcbc] h-full flex group items-center justify-center px-[17px] rounded-[6px] ">
+                                <p class="text-[#fff] text-[13px] font-[600] cursor-default select-none group-hover:text-[#000] " >Month</p>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+                <p class="text-[13px] mt-[22px] text-[#fff] font-[600] ">Loan Terms</p>
+                <div class="bg-[#3e3e3e] flex items-center mt-[12px] rounded-[10px] overflow-hidden h-[50px] ">
+                    <input class= "flex-1 py-[14px] px-[12px] text-[13px] text-[#fff] bg-[#3e3e3e] font-[500] h-full rounded-[10px] outline-0 " type="text">
+                    <span class="p-[3px] h-full " >
+                        <div class="bg-[#000] h-full flex-1 flex items-center bg-[#787878] rounded-[8px] overflow-hidden " >
+                            <div class="flex-1 hover:bg-[#bcbcbc] group h-full flex items-center justify-center px-[17px] rounded-[6px] ">
+                                <p class="text-[#fff] text-[13px] font-[600] cursor-default select-none group-hover:text-[#000] " >Year</p>
+                            </div>
+                            <div class="flex-1 hover:bg-[#bcbcbc] h-full flex group items-center justify-center px-[17px] rounded-[6px] ">
+                                <p class="text-[#fff] text-[13px] font-[600] cursor-default select-none group-hover:text-[#000] " >Month</p>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+
+            </div>
+
+            <!-- Button -->
+
+            <button class="w-full bg-[#fff] text-[#000] uppercase mt-[26px] rounded-[9px] text-[14px] sm:text-[15px] font-[900] flex items-center justify-center py-[15px] sm:py-[16px] " >
+                get a quote
+            </button>
+        </div>
+
+        <!--  -->
+        <!-- Second Line start -->
+        <!--  -->
+
+        <main class="flex flex-1 gap-[22px] items-start xl:flex-row flex-col w-full " >
+            <div class="flex-1 w-full ">
+                <div class="bg-[#edfdef] flex items-center justify-between px-[16px] py-[16px] sm:py-[20px] rounded-[12px] ">
+                    <div class="">
+                        <h2 class="text-[#728f77] text-[13px] sm:text-[14px] font-[700] ">All Payment</h2>
+                        <p class="text-[#5cc76f] text-[13px] sm:text-[14px] font-[900] mt-[4px] ">$458,511.57</p>
+                    </div>
+                    <div class="">
+                        <h2 class="text-[#728f77] text-[13px] sm:text-[14px] font-[700] ">All Payment</h2>
+                        <p class="text-[#5cc76f] text-[13px] sm:text-[14px] font-[900] mt-[4px] ">$458,511.57</p>
+                    </div>
+                    <div class="">
+                        <h2 class="text-[#728f77] text-[13px] sm:text-[14px] font-[700] ">All Payment</h2>
+                        <p class="text-[#5cc76f] text-[13px] sm:text-[14px] font-[900] mt-[4px] ">$458,511.57</p>
+                    </div>
+                </div>
+                <div class="border-[3px] border-[#edfcef] mt-[26px] rounded-[12px]  " >
+                    <div class=" p-[22px] ">
+                        <div  class="flex items-center justify-between relative " >
+                            <h2 class="text-[18px] ms:text-[20px] font-[900] text-[#3f4941] ">Payment Breakdown</h2>
+                            <div class="block_item_main flex items-center justify-center text-[14px] border-[2px] cursor-default border-[#6c8971] h-[22px] w-[22px] rounded-[50px]   ">
+                                <i class="fa-solid fa-exclamation text-[#6c8971] text-[12px] "></i>
+                            </div>
+                            <div class="absolute bg-[#5dc76f] rounded-[13px] w-[270px] p-[14px] right-[30px] top-[10px] block_item ">
+                                <h2 class=" text-[#fff] text-[15px] sm:text-[16px] font-[800] ">Payment Breakdown</h2>
+                                <p class="text-[13px] sm:text-[14px] text-[#fff] mt-[2px] font-[500] ">A breakdown of your total payment so you can see where money is allocated.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="flex items-start p-[22px] ">
+                        <div>
+
+                        </div>
+                        <div class="flex-1 ">
+                            <div class="flex items-center gap-[6px] my-[12px] ">
+                                <span class="rounded-[50px] h-[15px] w-[15px] bg-[#fa9d39] "></span>
+                                <p class="text-[15px] font-[700] pl-[3px] ">Principal & Interest</p>
+                                <p class="text-[#6c8971] text-[14px] font-[600] ">($1,073.64)</p>
+                            </div>
+                            <div class="flex items-center gap-[6px] my-[12px] ">
+                                <span class="rounded-[50px] h-[15px] w-[15px] bg-[#59c2c0] "></span>
+                                <p class="text-[15px] font-[700] pl-[3px] ">Taxes</p>
+                                <p class="text-[#6c8971] text-[14px] font-[600] ">($100.00)</p>
+                            </div>
+                            <div class="flex items-center gap-[6px] my-[12px] ">
+                                <span class="rounded-[50px] h-[15px] w-[15px] bg-[#f85a85] "></span>
+                                <p class="text-[15px] font-[700] pl-[3px] ">Insurance</p>
+                                <p class="text-[#6c8971] text-[14px] font-[600] ">($100.00)</p>
+                            </div>
+                            <div class="flex items-center gap-[6px] my-[12px] ">
+                                <span class="rounded-[50px] h-[15px] w-[15px] bg-[#40a2ed] "></span>
+                                <p class="text-[15px] font-[700] pl-[3px] ">HOA Dues</p>
+                                <p class="text-[#6c8971] text-[14px] font-[600] ">($0.00)</p>
+                            </div>
+                            <div class="flex items-center gap-[6px] my-[12px] ">
+                                <span class="rounded-[50px] h-[15px] w-[15px] bg-[#eeee21] "></span>
+                                <p class="text-[15px] font-[700] pl-[3px] ">PMI</p>
+                                <p class="text-[#6c8971] text-[14px] font-[600] ">($0.00)</p>
+                            </div>
+                            <div class="flex items-center gap-[6px] my-[12px] ">
+                                <span class="rounded-[50px] h-[15px] w-[15px] bg-[#8224e3] "></span>
+                                <p class="text-[15px] font-[700] pl-[3px] ">Extra Payment</p>
+                                <p class="text-[#6c8971] text-[14px] font-[600] ">($0.00)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="flex border-b-[1px] border-[#edfcef]  ">
+                        <div class="flex-1 Monthly flex items-center justify-center py-[18px] border-b-[2px] border-[#fff] hover:border-[#5cc76f] hover:text-[#000] text-[#6c8971] text-[14px] sm:text-[15px] font-[700] cursor-pointer ">
+                            Monthly Payment
+                        </div>
+                        <div class="flex-1 Total_Payment flex items-center justify-center py-[18px] border-b-[2px] border-[#fff] hover:border-[#5cc76f] hover:text-[#000] text-[#6c8971] text-[14px] sm:text-[15px] font-[700] cursor-pointer  ">
+                            Total Payment
+                        </div>
+                    </div>
+                    <div class="p-[22px] flex  ">
+                        <div class="flex-1 " >
+                            <div class=" ">
+                                <h2 class="text-[#6c8971] text-[13px] sm:text-[14px] font-[600] ">Home Value:</h2>
+                                <p class="text-[#000] text-[13px] sm:text-[14px] font-[800] mt-[3px] ">$200,000.00</p>
+                            </div>
+                            <div class="mt-[22px] ">
+                                <h2 class="text-[#6c8971] text-[13px] sm:text-[14px] font-[600] ">Monthly Principal & Interest:</h2>
+                                <p class="text-[#000] text-[13px] sm:text-[14px] font-[800] mt-[3px] ">$200,000.00</p>
+                            </div>
+                        </div>
+                        <div class="flex-1 ">
+                            <div class=" ">
+                                <h2 class="text-[#6c8971] text-[13px] sm:text-[14px] font-[600] ">Home Value:</h2>
+                                <p class="text-[#000] text-[13px] sm:text-[14px] font-[800] mt-[3px] ">$200,000.00</p>
+                            </div>
+                            <div class="mt-[22px] ">
+                                <h2 class="text-[#6c8971] text-[13px] sm:text-[14px] font-[600] ">Monthly Principal & Interest:</h2>
+                                <p class="text-[#000] text-[13px] sm:text-[14px] font-[800] mt-[3px] ">$200,000.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--  -->
+            <!-- Third Line start -->
+            <!--  -->
+            
+            <div class="flex-1 w-full ">
+                <div class=" bg-[#fdedf1] flex items-center justify-between px-[16px] py-[16px] sm:py-[20px] rounded-[12px] ">
+                    <div class="">
+                        <h2 class="text-[#a48990] text-[13px] sm:text-[14px] font-[700] ">All Payment</h2>
+                        <p class="text-[#f85a85] text-[13px] sm:text-[14px] font-[900] mt-[4px] ">$458,511.57</p>
+                    </div>
+                    <div class="">
+                        <h2 class="text-[#a48990] text-[13px] sm:text-[14px] font-[700] ">All Payment</h2>
+                        <p class="text-[#f85a85] text-[13px] sm:text-[14px] font-[900] mt-[4px] ">$458,511.57</p>
+                    </div>
+                    <div class="">
+                        <h2 class="text-[#a48990] text-[13px] sm:text-[14px] font-[700] ">All Payment</h2>
+                        <p class="text-[#f85a85] text-[13px] sm:text-[14px] font-[900] mt-[4px] ">$458,511.57</p>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="border-[3px] border-[#edfcef] mt-[26px] rounded-[12px] p-[13px] sm:p-[22px]] ">
+                    <div  class="flex items-center justify-between relative " >
+                        <h2 class="text-[16px] sm:text-[18px] md:text-[20px] font-[900] text-[#3f4941] ">Early Payoff Strategy</h2>
+                        <div class="block_item_main2 flex items-center justify-center text-[13px] sm:text-[14px] border-[2px] cursor-default border-[#6c8971] h-[22px] w-[22px] rounded-[50px]   ">
+                            <i class="fa-solid fa-exclamation text-[#6c8971] text-[12px] "></i>
+                        </div>
+                        <div class="absolute bg-[#5dc76f] rounded-[13px] w-[270px] p-[14px] right-[30px] top-[10px] block_item2 ">
+                            <h2 class=" text-[#fff] text-[15px] sm:text-[16px] font-[800] ">Early Payoff Strategy</h2>
+                            <p class="text-[13px] sm:text-[14px] text-[#fff] mt-[2px] font-[500] ">Add an extra payment and see how many months you can eliminate on the back end of the loan.</p>
+                        </div>
+                    </div>
+                    <div class="p-[8px] sm:p-[15px] ">
+                        <h2 class="mt-[22px] text-[13px] sm:text-[14px] font-[800] ">Additional Monthly</h2>
+                        <input class="mt-[15px] rounded-[8px] border w-full outline-0 py-[12px] px-[12px] border-[#cdeed4] text-[15px] text-[#6c8971] font-[500] " type="text" placeholder="You can add below $500.00">
+                        <h2 class="mt-[22px] text-[13px] sm:text-[14px] font-[800] ">Increase Frequency</h2>
+                        <div class="flex mt-[15px] items-center border border-[#cdeed4] rounded-[10px] gap-[8px] p-[5px] sm:p-[8px]  " >
+                            <div class="rounded-[8px] flex-1 flex items-center justify-center py-[12px] sm:py-[15px] cursor-pointer text-[#000] text-[13px] sm:text-[14px] font-[600] hover:font-[800] hover:bg-[#cdeed4] hover:text-[#5cc76f]  ">
+                                Monthly
+                            </div>
+                            <div class="rounded-[8px] flex-1 flex items-center justify-center py-[12px] sm:py-[15px] cursor-pointer text-[#000] text-[13px] sm:text-[14px] font-[600] hover:font-[800] hover:bg-[#cdeed4] hover:text-[#5cc76f]  ">
+                                Bi weekly
+                            </div>
+                            <div class="rounded-[8px] flex-1 flex items-center justify-center py-[12px] sm:py-[15px] cursor-pointer text-[#000] text-[13px] sm:text-[14px] font-[600] hover:font-[800] hover:bg-[#cdeed4] hover:text-[#5cc76f]  ">
+                                weekly
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-[3px] border-[#edfcef] mt-[22px] sm:mt-[32px] rounded-[12px] p-[13px] sm:p-[22px] ">
+                    <div  class="flex items-center justify-between relative " >
+                        <h2 class="text-[16px] sm:text-[18px] md:text-[20px] font-[900] text-[#3f4941] ">Lump Sum Payment</h2>
+                        <div class="block_item_main2 flex items-center justify-center text-[14px] border-[2px] cursor-default border-[#6c8971] h-[22px] w-[22px] rounded-[50px]   ">
+                            <i class="fa-solid fa-exclamation text-[#6c8971] text-[12px] "></i>
+                        </div>
+                        <div class="absolute bg-[#5dc76f] rounded-[13px] w-[270px] p-[14px] right-[30px] top-[10px] block_item2 ">
+                            <h2 class=" text-[#fff] text-[15px] sm:text-[16px] font-[800] ">Lump Sum Payment</h2>
+                            <p class="text-[13px] sm:text-[14px] text-[#fff] mt-[2px] font-[500] ">Shorten your loan term by paying a lump sum all to principal.</p>
+                        </div>
+                    </div>
+                    <div class="p-[8px] sm:p-[15px] ">
+                        <h2 class="mt-[22px] text-[13px] sm:text-[14px] font-[800] ">Lump Sum Addition</h2>
+                        <input class="mt-[15px] rounded-[8px] border w-full outline-0 py-[12px] px-[12px] border-[#cdeed4] text-[#6c8971] text-[15px] font-[500] " type="text" placeholder="You can add below $100k">
+                        <h2 class="mt-[22px] text-[13px] sm:text-[14px] font-[800] ">Frequency</h2>
+                        <div class="flex mt-[15px] items-center border border-[#cdeed4] rounded-[10px] gap-[8px] p-[5px] sm:p-[8px]  " >
+                            <div class="rounded-[8px] flex-1 flex items-center justify-center py-[12px] sm:py-[15px] cursor-pointer text-[#000] text-[13px] sm:text-[14px] font-[600] hover:font-[800] hover:bg-[#cdeed4] hover:text-[#5cc76f]  ">
+                                One time
+                            </div>
+                            <div class="rounded-[8px] flex-1 flex items-center justify-center py-[12px] sm:py-[15px] cursor-pointer text-[#000] text-[13px] sm:text-[14px] font-[600] hover:font-[800] hover:bg-[#cdeed4] hover:text-[#5cc76f]  ">
+                                Yearly
+                            </div>
+                            <div class="rounded-[8px] flex-1 flex items-center justify-center py-[12px] sm:py-[15px] cursor-pointer text-[#000] text-[13px] sm:text-[14px] font-[600] hover:font-[800] hover:bg-[#cdeed4] hover:text-[#5cc76f]  ">
+                                Quarterly
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+</body>
+</html>
